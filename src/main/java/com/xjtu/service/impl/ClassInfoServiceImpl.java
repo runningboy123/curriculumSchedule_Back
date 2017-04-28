@@ -1,7 +1,9 @@
 package com.xjtu.service.impl;
 
+import com.xjtu.dao.ClassInfoByClassDao;
 import com.xjtu.dao.ClassInfoByCourseDao;
 import com.xjtu.dao.ListInfoDao;
+import com.xjtu.entity.ClassInfoByClass;
 import com.xjtu.entity.ClassInfoByCourse;
 import com.xjtu.entity.ListInfo;
 import com.xjtu.exception.VerificationException;
@@ -29,7 +31,7 @@ public class ClassInfoServiceImpl implements ClassInfoService {
 
     @Autowired
     private ClassInfoByCourseDao classInfoByCourseDao;
-
+    
     @Autowired
     private UrlDataService urlDataService;
 
@@ -121,4 +123,6 @@ public class ClassInfoServiceImpl implements ClassInfoService {
         return lists;
 
     }
+
+	
 }
